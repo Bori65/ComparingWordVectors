@@ -66,29 +66,3 @@ def vectors_as_dict(df):
     for row in rows:
         res[row.asDict()['metadata']['token']] = row.asDict()['embeddings']
     return res
-
-
-if __name__ == "__main__":
-    '''
-    text1 = "lev tiger medved slon gepard"
-    text2 = "krava koza sliepka baran hus"
-    df1, df2 = return_df(text1, text2)
-    dict_of_vec1 = getvectors_as_dict(df1)
-    dict_of_vec2 = getvectors_as_dict(df2)
-    for name1, v1 in dict_of_vec1.items():
-        for name2, v2 in dict_of_vec1.items():
-            if name1 != name2:
-                print("{}, {}: euclidean {} | cosine similarity {}".format(name1,name2,euclidean_distances(v1,v2),cosine_similarity(v1, v2)))
-    print()
-    for name1, v1 in dict_of_vec2.items():
-        for name2, v2 in dict_of_vec2.items():
-            if name1 != name2:
-                print("{}, {}: euclidean {} | cosine similarity {}".format(name1,name2,euclidean_distances(v1,v2),cosine_similarity(v1, v2)))
-
-    print()
-    for name1, v1 in dict_of_vec1.items():
-        for name2, v2 in dict_of_vec2.items():
-            if name1 != name2:
-                print("{}, {}: euclidean {} | cosine similarity {}".format(name1,name2,euclidean_distances(v1,v2),cosine_similarity(v1, v2)))
-
-    '''
