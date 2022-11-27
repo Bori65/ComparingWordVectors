@@ -12,10 +12,13 @@ First, we create an instance of the class ChainAssociationTask, with three param
 *	name of an xlsx or csv file
 *	name of the first column (“prime”)
 *	name of the second column (“response”)</br>
+
 To get the data frame, we call its method dataframe_of_distances().</br>
+
 To create excel file we call the method get_csv_table() or get_excel_table() with two parameters:
 *	the filename of the new excel or csv table with the path
 *	the before-created data frame</br>
+
 The result will be xlsx file or csv file where in the first and second columns are the pairs of words, in the last two columns are the Euclidean and cosine distances of these word vectors.
 
 ## Discrete task
@@ -28,9 +31,11 @@ First, we create an instance of the class DiscreteTask, with four parameters:
 *	name of the third column (“condition”)</br>
 
 To get the data frame, we call its method dataframe_of_distances().</br>
+
 To create excel file we call the method get_csv_table() or get_excel_table() with two parameters:
 *	the filename of the new excel or csv table with the path
 *	the before-created data frame</br>
+
 The result will be xlsx file or csv file where in the first and second columns are the pairs of words, in the third column are the conditions (associative or dissociative), in the last two columns, are the Euclidean and cosine distances of these word vectors.
 
 ## Fluency task
@@ -39,9 +44,12 @@ In the fluency task, we calculated the distance between each word vector from a 
 First, we create an instance of the class FluencyTask, with two parameters:
 *	name of an xlsx or csv file
 *	name of the first column (“Response”)</br>
+*	
 To get the data frame, we call its method dataframe_of_distances().</br>
+
 To create excel file we call the method get_csv_table() or get_excel_table() with two parameters:
-•	the filename of the new excel or csv table with the path
-•	the before created data frame</br>
+*	the filename of the new excel or csv table with the path
+*	the before created data frame</br>
+
 The result will be xlsx file or csv file where in the first and second columns are the pairs of words, in the last two columns, are the Euclidean and cosine distances of these word vectors.</br>
 
