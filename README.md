@@ -44,7 +44,7 @@ In the fluency task, we calculated the distance between each word vector from a 
 First, we create an instance of the class FluencyTask, with two parameters:
 *	name of an xlsx or csv file
 *	name of the first column (“Response”)</br>
-*	
+	
 To get the data frame, we call its method dataframe_of_distances().</br>
 
 To create excel file we call the method get_csv_table() or get_excel_table() with two parameters:
